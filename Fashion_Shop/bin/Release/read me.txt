@@ -1,0 +1,4 @@
+//il vous sera utile de posseder la base des donnees.
+//veiller executer le fichier base des donnees
+basedesdonnee
+FASHION SHOP V1

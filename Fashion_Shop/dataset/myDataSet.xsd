@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="myDataSet" targetNamespace="http://tempuri.org/myDataSet.xsd" xmlns:mstns="http://tempuri.org/myDataSet.xsd" xmlns="http://tempuri.org/myDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_fashionShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_fashionShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fashion_Shop.Properties.Settings.GlobalReference.Default.BD_fashionShopConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_fashionShopConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_fashionShopConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fashion_Shop.Properties.Settings.GlobalReference.Default.BD_fashionShopConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FactureTableAdapter" GeneratorDataComponentClassName="FactureTableAdapter" Name="Facture" UserDataComponentName="FactureTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_fashionShopConnectionString1 (Settings)" DbObjectName="BD_fashionShop.dbo.Facture" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sortieId, facture, Article, Quantite, Prix, Client, date_, employe FROM dbo.Facture</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sortieId" DataSetColumn="sortieId" />
+              <Mapping SourceColumn="facture" DataSetColumn="facture" />
+              <Mapping SourceColumn="Article" DataSetColumn="Article" />
+              <Mapping SourceColumn="Quantite" DataSetColumn="Quantite" />
+              <Mapping SourceColumn="Prix" DataSetColumn="Prix" />
+              <Mapping SourceColumn="Client" DataSetColumn="Client" />
+              <Mapping SourceColumn="date_" DataSetColumn="date_" />
+              <Mapping SourceColumn="employe" DataSetColumn="employe" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CommandeTableAdapter" GeneratorDataComponentClassName="CommandeTableAdapter" Name="Commande" UserDataComponentName="CommandeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_fashionShopConnectionString1 (Settings)" DbObjectName="BD_fashionShop.dbo.Commande" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT refcomande, matcommand, Article, Quantite, Prix, Date_, Client, Etat FROM Commande</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="refcomande" DataSetColumn="refcomande" />
+              <Mapping SourceColumn="matcommand" DataSetColumn="matcommand" />
+              <Mapping SourceColumn="Article" DataSetColumn="Article" />
+              <Mapping SourceColumn="Quantite" DataSetColumn="Quantite" />
+              <Mapping SourceColumn="Prix" DataSetColumn="Prix" />
+              <Mapping SourceColumn="Date_" DataSetColumn="Date_" />
+              <Mapping SourceColumn="Client" DataSetColumn="Client" />
+              <Mapping SourceColumn="Etat" DataSetColumn="Etat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CommandeFTableAdapter" GeneratorDataComponentClassName="CommandeFTableAdapter" Name="CommandeF" UserDataComponentName="CommandeFTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_fashionShopConnectionString1 (Settings)" DbObjectName="BD_fashionShop.dbo.CommandeF" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT refcomande, matcommand, Article, Quantite, Prix, Date_, Fournisseur, Etat FROM dbo.CommandeF</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="refcomande" DataSetColumn="refcomande" />
+              <Mapping SourceColumn="matcommand" DataSetColumn="matcommand" />
+              <Mapping SourceColumn="Article" DataSetColumn="Article" />
+              <Mapping SourceColumn="Quantite" DataSetColumn="Quantite" />
+              <Mapping SourceColumn="Prix" DataSetColumn="Prix" />
+              <Mapping SourceColumn="Date_" DataSetColumn="Date_" />
+              <Mapping SourceColumn="Fournisseur" DataSetColumn="Fournisseur" />
+              <Mapping SourceColumn="Etat" DataSetColumn="Etat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="listEmployeTableAdapter" GeneratorDataComponentClassName="listEmployeTableAdapter" Name="listEmploye" UserDataComponentName="listEmployeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_fashionShopConnectionString1 (Settings)" DbObjectName="BD_fashionShop.dbo.listEmploye" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Marticule, Nom, Postnom, Prenom, Sexe, Naissance, Poste, Telephone, Addresse, Image_ FROM dbo.listEmploye</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Marticule" DataSetColumn="Marticule" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="Postnom" DataSetColumn="Postnom" />
+              <Mapping SourceColumn="Prenom" DataSetColumn="Prenom" />
+              <Mapping SourceColumn="Sexe" DataSetColumn="Sexe" />
+              <Mapping SourceColumn="Naissance" DataSetColumn="Naissance" />
+              <Mapping SourceColumn="Poste" DataSetColumn="Poste" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="Addresse" DataSetColumn="Addresse" />
+              <Mapping SourceColumn="Image_" DataSetColumn="Image_" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="situationTableAdapter" GeneratorDataComponentClassName="situationTableAdapter" Name="situation" UserDataComponentName="situationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_fashionShopConnectionString1 (Settings)" DbObjectName="BD_fashionShop.dbo.situation" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Article, Entree, Sortie, Quantite, Date_ FROM dbo.situation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Article" DataSetColumn="Article" />
+              <Mapping SourceColumn="Entree" DataSetColumn="Entree" />
+              <Mapping SourceColumn="Sortie" DataSetColumn="Sortie" />
+              <Mapping SourceColumn="Quantite" DataSetColumn="Quantite" />
+              <Mapping SourceColumn="Date_" DataSetColumn="Date_" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="myDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="myDataSet" msprop:Generator_UserDSName="myDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Facture" msprop:Generator_TableClassName="FactureDataTable" msprop:Generator_TableVarName="tableFacture" msprop:Generator_TablePropName="Facture" msprop:Generator_RowDeletingName="FactureRowDeleting" msprop:Generator_RowChangingName="FactureRowChanging" msprop:Generator_RowEvHandlerName="FactureRowChangeEventHandler" msprop:Generator_RowDeletedName="FactureRowDeleted" msprop:Generator_UserTableName="Facture" msprop:Generator_RowChangedName="FactureRowChanged" msprop:Generator_RowEvArgName="FactureRowChangeEvent" msprop:Generator_RowClassName="FactureRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sortieId" msprop:Generator_ColumnVarNameInTable="columnsortieId" msprop:Generator_ColumnPropNameInRow="sortieId" msprop:Generator_ColumnPropNameInTable="sortieIdColumn" msprop:Generator_UserColumnName="sortieId" type="xs:long" />
+              <xs:element name="facture" msprop:Generator_ColumnVarNameInTable="columnfacture" msprop:Generator_ColumnPropNameInRow="facture" msprop:Generator_ColumnPropNameInTable="factureColumn" msprop:Generator_UserColumnName="facture" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Article" msprop:Generator_ColumnVarNameInTable="columnArticle" msprop:Generator_ColumnPropNameInRow="Article" msprop:Generator_ColumnPropNameInTable="ArticleColumn" msprop:Generator_UserColumnName="Article" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantite" msprop:Generator_ColumnVarNameInTable="columnQuantite" msprop:Generator_ColumnPropNameInRow="Quantite" msprop:Generator_ColumnPropNameInTable="QuantiteColumn" msprop:Generator_UserColumnName="Quantite" type="xs:long" minOccurs="0" />
+              <xs:element name="Prix" msprop:Generator_ColumnVarNameInTable="columnPrix" msprop:Generator_ColumnPropNameInRow="Prix" msprop:Generator_ColumnPropNameInTable="PrixColumn" msprop:Generator_UserColumnName="Prix" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Client" msprop:Generator_ColumnVarNameInTable="columnClient" msprop:Generator_ColumnPropNameInRow="Client" msprop:Generator_ColumnPropNameInTable="ClientColumn" msprop:Generator_UserColumnName="Client" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_" msprop:Generator_ColumnVarNameInTable="columndate_" msprop:Generator_ColumnPropNameInRow="date_" msprop:Generator_ColumnPropNameInTable="date_Column" msprop:Generator_UserColumnName="date_" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="employe" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnemploye" msprop:Generator_ColumnPropNameInRow="employe" msprop:Generator_ColumnPropNameInTable="employeColumn" msprop:Generator_UserColumnName="employe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="92" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Commande" msprop:Generator_TableClassName="CommandeDataTable" msprop:Generator_TableVarName="tableCommande" msprop:Generator_RowChangedName="CommandeRowChanged" msprop:Generator_TablePropName="Commande" msprop:Generator_RowDeletingName="CommandeRowDeleting" msprop:Generator_RowChangingName="CommandeRowChanging" msprop:Generator_RowEvHandlerName="CommandeRowChangeEventHandler" msprop:Generator_RowDeletedName="CommandeRowDeleted" msprop:Generator_RowClassName="CommandeRow" msprop:Generator_UserTableName="Commande" msprop:Generator_RowEvArgName="CommandeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refcomande" msprop:Generator_ColumnVarNameInTable="columnrefcomande" msprop:Generator_ColumnPropNameInRow="refcomande" msprop:Generator_ColumnPropNameInTable="refcomandeColumn" msprop:Generator_UserColumnName="refcomande" type="xs:long" minOccurs="0" />
+              <xs:element name="matcommand" msprop:Generator_ColumnVarNameInTable="columnmatcommand" msprop:Generator_ColumnPropNameInRow="matcommand" msprop:Generator_ColumnPropNameInTable="matcommandColumn" msprop:Generator_UserColumnName="matcommand" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Article" msprop:Generator_ColumnVarNameInTable="columnArticle" msprop:Generator_ColumnPropNameInRow="Article" msprop:Generator_ColumnPropNameInTable="ArticleColumn" msprop:Generator_UserColumnName="Article" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantite" msprop:Generator_ColumnVarNameInTable="columnQuantite" msprop:Generator_ColumnPropNameInRow="Quantite" msprop:Generator_ColumnPropNameInTable="QuantiteColumn" msprop:Generator_UserColumnName="Quantite" type="xs:long" minOccurs="0" />
+              <xs:element name="Prix" msprop:Generator_ColumnVarNameInTable="columnPrix" msprop:Generator_ColumnPropNameInRow="Prix" msprop:Generator_ColumnPropNameInTable="PrixColumn" msprop:Generator_UserColumnName="Prix" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" msprop:Generator_UserColumnName="Date_" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Client" msprop:Generator_ColumnVarNameInTable="columnClient" msprop:Generator_ColumnPropNameInRow="Client" msprop:Generator_ColumnPropNameInTable="ClientColumn" msprop:Generator_UserColumnName="Client" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Etat" msprop:Generator_ColumnVarNameInTable="columnEtat" msprop:Generator_ColumnPropNameInRow="Etat" msprop:Generator_ColumnPropNameInTable="EtatColumn" msprop:Generator_UserColumnName="Etat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CommandeF" msprop:Generator_TableClassName="CommandeFDataTable" msprop:Generator_TableVarName="tableCommandeF" msprop:Generator_RowChangedName="CommandeFRowChanged" msprop:Generator_TablePropName="CommandeF" msprop:Generator_RowDeletingName="CommandeFRowDeleting" msprop:Generator_RowChangingName="CommandeFRowChanging" msprop:Generator_RowEvHandlerName="CommandeFRowChangeEventHandler" msprop:Generator_RowDeletedName="CommandeFRowDeleted" msprop:Generator_RowClassName="CommandeFRow" msprop:Generator_UserTableName="CommandeF" msprop:Generator_RowEvArgName="CommandeFRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refcomande" msprop:Generator_ColumnVarNameInTable="columnrefcomande" msprop:Generator_ColumnPropNameInRow="refcomande" msprop:Generator_ColumnPropNameInTable="refcomandeColumn" msprop:Generator_UserColumnName="refcomande" type="xs:long" minOccurs="0" />
+              <xs:element name="matcommand" msprop:Generator_ColumnVarNameInTable="columnmatcommand" msprop:Generator_ColumnPropNameInRow="matcommand" msprop:Generator_ColumnPropNameInTable="matcommandColumn" msprop:Generator_UserColumnName="matcommand" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Article" msprop:Generator_ColumnVarNameInTable="columnArticle" msprop:Generator_ColumnPropNameInRow="Article" msprop:Generator_ColumnPropNameInTable="ArticleColumn" msprop:Generator_UserColumnName="Article" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantite" msprop:Generator_ColumnVarNameInTable="columnQuantite" msprop:Generator_ColumnPropNameInRow="Quantite" msprop:Generator_ColumnPropNameInTable="QuantiteColumn" msprop:Generator_UserColumnName="Quantite" type="xs:long" minOccurs="0" />
+              <xs:element name="Prix" msprop:Generator_ColumnVarNameInTable="columnPrix" msprop:Generator_ColumnPropNameInRow="Prix" msprop:Generator_ColumnPropNameInTable="PrixColumn" msprop:Generator_UserColumnName="Prix" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" msprop:Generator_UserColumnName="Date_" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Fournisseur" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFournisseur" msprop:Generator_ColumnPropNameInRow="Fournisseur" msprop:Generator_ColumnPropNameInTable="FournisseurColumn" msprop:Generator_UserColumnName="Fournisseur" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Etat" msprop:Generator_ColumnVarNameInTable="columnEtat" msprop:Generator_ColumnPropNameInRow="Etat" msprop:Generator_ColumnPropNameInTable="EtatColumn" msprop:Generator_UserColumnName="Etat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="listEmploye" msprop:Generator_TableClassName="listEmployeDataTable" msprop:Generator_TableVarName="tablelistEmploye" msprop:Generator_RowChangedName="listEmployeRowChanged" msprop:Generator_TablePropName="listEmploye" msprop:Generator_RowDeletingName="listEmployeRowDeleting" msprop:Generator_RowChangingName="listEmployeRowChanging" msprop:Generator_RowEvHandlerName="listEmployeRowChangeEventHandler" msprop:Generator_RowDeletedName="listEmployeRowDeleted" msprop:Generator_RowClassName="listEmployeRow" msprop:Generator_UserTableName="listEmploye" msprop:Generator_RowEvArgName="listEmployeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:long" />
+              <xs:element name="Marticule" msprop:Generator_ColumnVarNameInTable="columnMarticule" msprop:Generator_ColumnPropNameInRow="Marticule" msprop:Generator_ColumnPropNameInTable="MarticuleColumn" msprop:Generator_UserColumnName="Marticule" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Postnom" msprop:Generator_ColumnVarNameInTable="columnPostnom" msprop:Generator_ColumnPropNameInRow="Postnom" msprop:Generator_ColumnPropNameInTable="PostnomColumn" msprop:Generator_UserColumnName="Postnom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prenom" msprop:Generator_ColumnVarNameInTable="columnPrenom" msprop:Generator_ColumnPropNameInRow="Prenom" msprop:Generator_ColumnPropNameInTable="PrenomColumn" msprop:Generator_UserColumnName="Prenom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sexe" msprop:Generator_ColumnVarNameInTable="columnSexe" msprop:Generator_ColumnPropNameInRow="Sexe" msprop:Generator_ColumnPropNameInTable="SexeColumn" msprop:Generator_UserColumnName="Sexe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Naissance" msprop:Generator_ColumnVarNameInTable="columnNaissance" msprop:Generator_ColumnPropNameInRow="Naissance" msprop:Generator_ColumnPropNameInTable="NaissanceColumn" msprop:Generator_UserColumnName="Naissance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Poste" msprop:Generator_ColumnVarNameInTable="columnPoste" msprop:Generator_ColumnPropNameInRow="Poste" msprop:Generator_ColumnPropNameInTable="PosteColumn" msprop:Generator_UserColumnName="Poste" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Addresse" msprop:Generator_ColumnVarNameInTable="columnAddresse" msprop:Generator_ColumnPropNameInRow="Addresse" msprop:Generator_ColumnPropNameInTable="AddresseColumn" msprop:Generator_UserColumnName="Addresse" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Image_" msprop:Generator_ColumnVarNameInTable="columnImage_" msprop:Generator_ColumnPropNameInRow="Image_" msprop:Generator_ColumnPropNameInTable="Image_Column" msprop:Generator_UserColumnName="Image_" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="situation" msprop:Generator_TableClassName="situationDataTable" msprop:Generator_TableVarName="tablesituation" msprop:Generator_TablePropName="situation" msprop:Generator_RowDeletingName="situationRowDeleting" msprop:Generator_RowChangingName="situationRowChanging" msprop:Generator_RowEvHandlerName="situationRowChangeEventHandler" msprop:Generator_RowDeletedName="situationRowDeleted" msprop:Generator_UserTableName="situation" msprop:Generator_RowChangedName="situationRowChanged" msprop:Generator_RowEvArgName="situationRowChangeEvent" msprop:Generator_RowClassName="situationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Article" msprop:Generator_ColumnVarNameInTable="columnArticle" msprop:Generator_ColumnPropNameInRow="Article" msprop:Generator_ColumnPropNameInTable="ArticleColumn" msprop:Generator_UserColumnName="Article" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Entree" msprop:Generator_ColumnVarNameInTable="columnEntree" msprop:Generator_ColumnPropNameInRow="Entree" msprop:Generator_ColumnPropNameInTable="EntreeColumn" msprop:Generator_UserColumnName="Entree" type="xs:long" minOccurs="0" />
+              <xs:element name="Sortie" msprop:Generator_ColumnVarNameInTable="columnSortie" msprop:Generator_ColumnPropNameInRow="Sortie" msprop:Generator_ColumnPropNameInTable="SortieColumn" msprop:Generator_UserColumnName="Sortie" type="xs:long" minOccurs="0" />
+              <xs:element name="Quantite" msprop:Generator_ColumnVarNameInTable="columnQuantite" msprop:Generator_ColumnPropNameInRow="Quantite" msprop:Generator_ColumnPropNameInTable="QuantiteColumn" msprop:Generator_UserColumnName="Quantite" type="xs:long" minOccurs="0" />
+              <xs:element name="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" msprop:Generator_UserColumnName="Date_" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:listEmploye" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
